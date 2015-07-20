@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>project boilerplate</title>
+    <title>[7B] Gravity Experiment 3</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -12,6 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -25,15 +26,41 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-      </ul>
-    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <ul>
+          <li><a href="http://jjohnson136.studio.mcad.edu/exd"><i class="fa fa-home"></i></a></li>
+          <li><a href="http://jjohnson136.studio.mcad.edu/exd">Week 7</a></li>
+          <li>7B: Gravity Experiment 3</li>
+        </ul>
+        <p class="source">
+          <a href="https://github.com/johnsojr/exd-assignment7b" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="canvas-wrapper"></div>
+      <section class="inputs">
+        <ul>
+          <li>
+            <a href="#" class="btn is-active js-pause">Pause</a>
+          </li>
+          <li>
+            <a href="#" class="btn js-reset">Reset</a>
+          </li>
+          <li>
+            <label for="gravity">
+              Gravity
+              <span class="value" id="gravity-value"></span>
+            </label>
+            <input name="gravity" id="gravity" type="range" min="-1" max="1" step="0.1" value="0.7">
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -50,8 +77,8 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/bundle.js -->
-        <script src="scripts/bundle.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/bundle.js -->
+    <script src="scripts/bundle.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
