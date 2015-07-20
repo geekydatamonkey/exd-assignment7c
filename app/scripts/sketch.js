@@ -3,14 +3,11 @@
 'use strict';
 
 import $ from 'jquery';
-//import _ from 'lodash';
 import p5 from 'p5';
 import 'p5/lib/addons/p5.dom';
 import ParticleSystem from './ParticleSystem';
-//import { getRandomInt } from './util';
 
 const Vector = p5.Vector;
-const π = Math.PI;
 
 function sketch(s) {
 
